@@ -38,8 +38,8 @@ JSON:
 PY dict:
 
     {
-        name: "Alan",
-        age: 58
+        "name": "Alan",
+        "age": 58
     }
 
 Objects syntax: key: value pairs, comma separated, enclosed in curly braces {}
