@@ -1,0 +1,42 @@
+09:00 START
+
+10:30 BREAK AM
+
+12:00-13:00 LUNCH
+
+14:30 BREAK PM 
+
+16:00-16:30 FORMAL FINISH, Q&A 
+
+alanl@stayahead.com
+Cc to:
+alan@alanlavender.com
+
+UK 07442 173078 SMS/call
+
+IE +353 85 105 2618 SMS/Whatsapp
+_________________________
+Course content -
+timings vary
+_________________________
+Getting started
+Scripts and syntax
+Variables and data types
+_________________________
+Operators and expressions
+Conditions and loops
+Functions
+_________________________
+Classes and Objects
+Containers and sequences
+    Lists
+    Tuples
+    Sets
+    Dictionaries
+    Strings
+Modules and packages
+_________________________
+Pattern matching
+Exception handling
+Files and the filesystem
+Databases
