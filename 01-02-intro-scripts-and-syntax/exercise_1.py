@@ -7,3 +7,18 @@
 
 # 7. Modify your script so that the variable for age has its
 # datatype changed after it is taken in from the user and before it is used in an expression.
+
+print("Enter your name:")
+name = input()
+print("you entered", name)
+print("Enter your age:")
+age = input()
+age = int(age)
+print("you entered " + str(age))#coerces int to str
+
+print(f"age next birthday: \n{age + 1}")#since Python 3.7>
+# and also - multi-line strings
+print(f"""
+age next birthday: 
+{age + 1}""")
+# above looks odd but works in context of triple-quoted strings
