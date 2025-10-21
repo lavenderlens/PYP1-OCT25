@@ -11,3 +11,50 @@
 # 6. If the user was born between 1977 and 1994, print Millennial to the console.
 # 7. If the user was born in 1995 or beyond, print Generation Z to the console.
 
+birth_year = int(input("Enter the year you were born:"))
+# birth_year = input("Enter the year you were born:")#an error will never occur here
+# birth_year = int(birth_year)#an error could occur here
+
+if birth_year >= 1946 and birth_year <= 1965:
+    print(f"Born in: {birth_year}: baby boomer!")
+elif birth_year >= 1966 and birth_year <= 1976:
+    print(f"Born in: {birth_year}: Gen X!")
+elif birth_year >= 1977 and birth_year <= 1994:
+    print(f"Born in: {birth_year}: Millenial!")
+else:
+    print(f"Born in: {birth_year}: Gen Z!")
+
+# OR, using upper bounds only
+if birth_year < 1946:
+    print("too old to categorise")
+elif birth_year <= 1965:
+    print(f"Born in: {birth_year}: baby boomer!")
+elif birth_year <= 1976:
+    print(f"Born in: {birth_year}: Gen X!")
+elif birth_year <= 1994:
+    print(f"Born in: {birth_year}: Millenial!")
+else:
+    print(f"Born in: {birth_year}: Gen Z!")
+
+# OR, using multiple comparison on one line
+if 1946 <= birth_year <= 1965:
+    print(f"Born in: {birth_year}: baby boomer!")
+elif 1966 <= birth_year <= 1976:
+    print(f"Born in: {birth_year}: Gen X!")
+elif 1978 <= birth_year <= 1994:
+    print(f"Born in: {birth_year}: Millenial!")
+elif birth_year >= 1994:
+    print(f"Born in: {birth_year}: Gen Z!")
+else:
+    print("too old to be categorised")
+
+# OR, using a builtin
+if birth_year in range(1946, 1966):
+    print(f"Born in: {birth_year}: baby boomer!")
+elif birth_year in range(1966, 1976):
+    print(f"Born in: {birth_year}: Gen X!")
+elif birth_year in range(1977, 1994):
+    print(f"Born in: {birth_year}: Millenial!")
+else:
+    print(f"Born in: {birth_year}: Gen Z!")
+
