@@ -1,0 +1,77 @@
+Day 1 Quiz
+----------
+1. List some of the characteristics of Python.
+OO 
+high-level not like assemply
+arguably easier to learn that a more imperative language eg Java
+not named after snakes
+free and open source
+large dev community
+dynamically typed
+
+2. The Python interpreter can be executed in two ways. What are they?
+script mode
+terminal (interactive)
+
+3. How should variables and functions be named in Python?
+lower_case_underscore_sep_snake_case
+can't start with number or use special characteristics
+descriptively and meaningfully named 
+reserve CamelCase for classes ONLY!
+
+4. What does a variable contain/reference, and how should it (almost) always be declared?
+a value in memory, assigned with = operator
+a reference in memory, assigned with = operator, to other values/references
+both values and references are treated as objects in Pythonvalues are immutable
+references may be updated in place
+
+5. Describe each part of the following statement:
+
+x = 12
+
+variable declaration
+= operator
+value 12 (whole number type int, inferred from the data)
+
+
+6. List 5 of the fundamental data types.
+
+string
+int
+bool
+list
+dictionary
+
+float
+complex
+tuple
+set 
+None 
+
+
+
+
+
+7. How does one read from a list element?
+my_list = [1,2,3]
+read the first number: my_list[0]
+
+8. Name TWO falsey values (values that will convert to False when passed to a bool() wrapper function):
+x = ?
+bool(x) #False
+
+0
+None 
+
+""
+[]
+dict()
+{}
+() 
+
+9. What value does the number 1 become when passed to a float() wrapper function?
+1.0
+
+10. What value does the string value "Hello" become when passed to a bool() wrapper function?
+True
+
