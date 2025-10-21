@@ -20,3 +20,22 @@ time permitting, pick 3 of these functions and convert them into functions witho
 
 get_name >>> print_name
 '''
+
+# get_name that accepts a dict and returns the value assoc. with the name key
+# def get_name(supporters,club):
+#         return {supporters}, {club}
+# def get_name(supporters):
+#         list_of_tuples = []
+#         for key, value in supporters.items():
+#             list_of_tuples.append((supporters[key]))    
+#         return (footy)
+ 
+# print(get_name({"Katy":"WHUFC","Ellis":"MUFC","Chris":"AVFC"}))
+supprters = {"Katy":"WHUFC","Ellis":"MUFC","Chris":"AVFC"}
+def get_names_and_teams(supporters):
+    list_of_tuples = []
+    for key, value in supporters.items():
+        list_of_tuples.append((key, value))
+    return list_of_tuples
+
+print(get_names_and_teams(supprters))
