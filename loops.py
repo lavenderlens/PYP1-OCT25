@@ -33,7 +33,7 @@ counter = 0
 while counter < len(names):
     print(names[counter])
     counter += 1#important: omitting this gives you an infinite loop
-    # the condition never becomes Fals so the loop carries on
+    # the condition never becomes False so the loop carries on
     # and on
 
 # while loop without a counter or a collection
@@ -56,8 +56,8 @@ while True:
 print("using break and continue, with else")
 for name in names:
     if name == "Janet Jackson":
-        # break#breaks out of loop, else does not execute
-        continue#breaks out of one iteration only, loop completes, else executed
+        break#breaks out of loop, else does not execute
+        # continue#breaks out of one iteration only, loop completes, else executed
     print(name)
 # no break
 else:
