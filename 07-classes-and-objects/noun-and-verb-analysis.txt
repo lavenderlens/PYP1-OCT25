@@ -1,0 +1,23 @@
+A customer submits a support ticket.
+
+Or they can ring in to the call centre.
+
+Call centre staff take the ticket and process it. 
+This involves sending it to engineers. 
+When the issue is resolved the engineers email the call centre staff
+who contact the customer with the resolution, by email, SMS, or phone.
+
+NOUNS:
+Customer 
+Ticket 
+CallCentre 
+Staff 
+CallCentreStaff 
+EngineeringStaff 
+
+VERBS:
+submit() 
+process() 
+resolve() 
+contact() 
+
