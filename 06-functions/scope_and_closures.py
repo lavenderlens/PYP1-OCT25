@@ -56,7 +56,7 @@ print(get_next_num_pure(next_num))
 print(get_next_num_pure(next_num))
 print(get_next_num_pure(next_num))
 
-# global dependency STILL APPERAS to change output
+# global dependency STILL APPEARS to change output
 # but the value of the arg copied into the pure function ALSO changes
 # so the function is pure, NO global dependency as it passes by copy
 
@@ -100,7 +100,7 @@ print(get_next_local_num())#always 1002
 # if we have an inner function, its effectively global scope
 # is the parent, or outer functions's scope
 # this scope level, to an inner function, is called LEXICAL scope
-# it measn: the outer function scope
+# it means: the outer function scope
 # EFFECTIVELY global,
 # to an inner function returned
 
@@ -117,7 +117,7 @@ def get_next_lexical_num():
 # it not only remembers the value of its lexically-scoped environment at closure creation time
 # it also persists this value IN BETWEEN function calls
 
-my_closure = get_next_lexical_num()
+my_closure = get_next_lexical_num()#function expression- function code on RHS passed to a new variable on LHS
 print(my_closure())
 print(my_closure())
 print(my_closure())
