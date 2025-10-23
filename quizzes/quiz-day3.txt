@@ -1,0 +1,79 @@
+Day 3 Quiz
+
+----------
+
+1.  The *args parameter packs n number of positional arguments into a ____tuple?
+    The **kwargs parameter packs n number of named arguments into a ____dictionary?
+
+2.  Runtime code at the top level of a module will always run in an importing script, true or false?
+    Can you write the special condition we can use to hide it from the importing script?
+    if __name__ == "__main__":
+
+3. How does one access the attributes and methods of an object?
+dot notation
+ 
+4. Class names should be in what style?
+CamelCase
+ 
+5. Which dunder (D-ouble UNDER-score) method is called (indirectly) when you FIRST create an object of a class?
+__init__
+ 
+6. The first param. of each method in a class is conventionally named self. 
+To what does this param. refer?
+itself - the empty object while under construction 
+ 
+7. How many objects are created in the following 2 LOC?
+
+class_a = ClassA() 
+
+class_b = class_a
+
+just one
+ 
+8. Which dunder method should we override in our own custom classes 
+to obtain a meaningful representation of our objects' properties, 
+once we have made the object? 
+
+__str__
+if not overridden, it will run the __str__ of Object, which will be a memory reference
+
+9. Which function is pure, a or b?
+
+thing = 1
+
+def a():
+
+    print(thing)
+ 
+def b(thing):
+
+    print(thing)
+
+b - a COPY of the data is passed in through the parameter
+ 
+10. Which of the two functions below has a closure, outer_a or outer_b? 
+Note that both functions compile and run, and both return an inner function called add_to_lst.
+Don't be surprised if you can't see the answer at first. 
+This question involves reasoning about the code.
+
+def outer_a():
+
+    lst = []                
+
+    def add_to_lst(item):
+        nonlocal lst        
+        lst.append(item)
+        return lst        
+    return add_to_lst
+ 
+lst = []
+
+def outer_b():
+
+    def add_to_lst(item):
+        global lst
+        lst.append(item)
+        return lst
+    return add_to_lst
+
+outer_a - it has a nonlocal variable
