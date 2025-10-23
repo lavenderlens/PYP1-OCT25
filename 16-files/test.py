@@ -1,2 +1,3 @@
 string = "Alan, \nShaun"
-print(string.strip("\n"))
+string = string.strip("\n")
+print(string)
