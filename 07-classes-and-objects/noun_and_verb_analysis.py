@@ -22,8 +22,10 @@ class Staff(ABC):
         self.name = name
         self.years_with_company = years_with_company
         self.contact_details = dict()
-    def file_for_tax(self, tax_rate, gross_income):
-        return tax_rate * gross_income / 52
+    ## abstract annotation in superclass
+    @abstractmethod 
+    def file_for_tax(self, tax_rate, gross_income, sales_bonus):
+        pass ##
     pass
 
 # make Staff abstract - no such thing as a Staff
@@ -33,17 +35,18 @@ class CallCentreStaff(Staff):
     def __init__(self, name, years_with_company, **contact_details):
         super().__init__(name, years_with_company, **contact_details)
         self.operator_id = 0
-    @abstractmethod
+    ## concrete implementation in subclass
     def file_for_tax(self, tax_rate, gross_income, sales_bonus):
-        return tax_rate * (gross_income + sales_bonus) / 52
-
-    pass
+        return tax_rate * (gross_income + sales_bonus) / 52 ##
 
 class Engineering(Staff):
     def __init__(self, name, years_with_company, **contact_details):
         super().__init__(name, years_with_company, **contact_details)
         self.location = "London"
-    pass
+    ## concrete implementation in subclass
+    def file_for_tax(self, tax_rate, gross_income, sales_bonus=None):
+        return tax_rate * (gross_income) / 52 ##
+
 
 
 

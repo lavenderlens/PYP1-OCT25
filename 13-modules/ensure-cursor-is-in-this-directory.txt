@@ -1,0 +1,4 @@
+ensure cursor (command line/terminal) is in this directory to run, so
+> cd 13-modules
+then run file by <python-interpreter> <file_name>
+interpreter shortcut is python (Windows), python3 (Mac/Linux)

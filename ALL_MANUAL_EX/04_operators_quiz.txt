@@ -1,0 +1,71 @@
+>>> 7 % 3
+1
+>>> 7 ** 3
+343
+>>> 7 // 3 #floor division, whole number
+2
+>>> 7 + 3.5 #promotion, int to float
+10.5
+>>> ["ho"] * 3
+['ho', 'ho', 'ho']
+>>> "The meaning of life is " + 42 #trick!
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+
+>>> "The meaning of life is " + str(42)
+'The meaning of life is 42'
+
+UNARY
+
+>>> not False
+True
+>>> not 2 #not 0 yields False
+False
+>>> not""
+True
+>>> not[1]
+False
+>>> 
+
+COMPARISON
+
+>>> "a" > "b" # a ASCII value is 97, b is 98
+False
+
+>>> [1,2,3] < [1,1,4]
+False
+
+>>> [1,2,3] > [1,1,4]
+True
+>>> [1,2,3] > [1,4,1]
+False
+>>> [1,1,3] > [1,1,4]
+False
+>>> 
+# comparing members in position as lists are ordered?
+
+>>> {"a","b","c"} == {"b","a","c"}
+>>> True 
+... #sets are not ordered
+
+>>> 3 == 3
+True
+>>> 3 is 3
+<stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
+True
+>>> [] == []
+True # based on they are both 0
+>>> [] is []
+False # based on they are different objects
+>>> "o" in "bobble"
+True
+>>> "john" in {"name": "john"}
+False # dict keys tested not values
+>>> 
+
+>>> True and bool(0) 
+False
+>>> bool([]) or bool("Hello") # False or True
+True
+>>> 
